@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  oculto=true;
+  
+  constructor() {
 
-  constructor() { }
-
+   }
+  pulsado(){
+    this.oculto=false;
+  }
+  
   ngOnInit() {
   }
 

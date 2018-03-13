@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  //oculto:Boolean;
+
+  constructor(){
+    //console.log(oculto);
+  }
+
 }
+
+

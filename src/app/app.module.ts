@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
+import { WrapperComponent } from './wrapper/wrapper.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     LoginComponent,
     RegistroComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    WrapperComponent
   ],
   imports: [
     BrowserModule,

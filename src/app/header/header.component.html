@@ -2,12 +2,12 @@
   <div class="row green">
       <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
           <div class="row">
-              <div id="header_barras" (click)="pulsado()" class="col-3">
+              <div id="header_barras" (click)="notificaHamburguesaClickeada()" class="col-3">
                   <i class="fa fa-bars fa-3x float-left text-white ml-2 p-0 margin-top-15px" aria-hidden="true"></i>
               </div>
               <figure class="col-7">
                   <div class="text-center">
-                      <img id="logo-banana" class="margin-top-25px mx-auto" src="../assets/img/logoweb2.png" alt="bananatube">
+                      <img id="logo-banana" class="margin-top-25px mx-auto" src="../assets/img/logoweb2.png" alt="bananatube" [routerLink]="[ '/']">
                   </div>
               </figure>
               <div class="col-2">

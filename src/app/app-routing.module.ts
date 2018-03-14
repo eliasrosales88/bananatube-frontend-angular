@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { SugerenciasComponent} from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConfiguracionComponent}  from './configuracion/configuracion.component';
+import { ListadeamigosComponent}  from './listadeamigos/listadeamigos.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'configuracion',
     component: ConfiguracionComponent
+  },
+  {
+    path: 'listadeamigos',
+    component: ListadeamigosComponent
   }
 ];
 

@@ -13,6 +13,7 @@ import { WrapperComponent } from './wrapper/wrapper.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
+import { ListadeamigosComponent } from './listadeamigos/listadeamigos.component';
 
 
 
@@ -27,7 +28,8 @@ import { ConfiguracionComponent } from './configuracion/configuracion.component'
     WrapperComponent,
     SugerenciasComponent,
     ConfiguracionComponent,
-    FooterComponent
+    FooterComponent,
+    ListadeamigosComponent
     
   ],
   imports: [

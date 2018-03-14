@@ -14,6 +14,7 @@ import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
 import { ListadeamigosComponent } from './listadeamigos/listadeamigos.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 
@@ -29,7 +30,8 @@ import { ListadeamigosComponent } from './listadeamigos/listadeamigos.component'
     SugerenciasComponent,
     ConfiguracionComponent,
     FooterComponent,
-    ListadeamigosComponent
+    ListadeamigosComponent,
+    ContactoComponent
     
   ],
   imports: [

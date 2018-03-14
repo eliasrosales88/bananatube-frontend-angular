@@ -10,6 +10,9 @@ import { RegistroComponent } from './registro/registro.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
+import { SugerenciasComponent } from './sugerencias/sugerencias.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { WrapperComponent } from './wrapper/wrapper.component';
     RegistroComponent,
     SidebarComponent,
     HeaderComponent,
-    WrapperComponent
+    WrapperComponent,
+    SugerenciasComponent,
+    FooterComponent
+    
   ],
   imports: [
     BrowserModule,

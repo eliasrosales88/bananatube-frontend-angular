@@ -1,0 +1,21 @@
+.sara{
+    background-color:#7D6323;
+    color: #FEFCC5;
+    font-style:normal;
+    font-size: 16px;
+    font-weight:normal;
+    text-align: center;
+ 
+ }
+ 
+ .sara:hover{
+     background-color:#7D6323;
+     color: #FEFCC5;
+     box-shadow:0px 4px 4px black; 
+     font-style:normal;
+     font-size: 16px;
+     font-weight:normal;
+     text-align: center;
+  
+  }
+ 

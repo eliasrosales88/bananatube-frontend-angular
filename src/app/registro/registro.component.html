@@ -1,3 +1,63 @@
-<p>
-  registro works!
-</p>
+<div class="row">             
+    <div class="col-sm text-center">
+      <h2>Registro</h2>
+    </div>        
+</div>
+  
+<div class="row">
+    
+    <div class="col-xl-2 col-lg-2 col-md-1 "></div>
+    <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
+      <div *ngIf="mensaje!=''">
+          <div class="alert alert-success">
+              <strong>Success!</strong> Register Done!
+            </div>
+      </div>
+        <form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
+  <div class="form-group">
+  <label for="usuario" class="col-sm text-center">Nombre de usuario(*)</label>
+  <input #usuario="ngModel" [(ngModel)]="user.username" type="text" 
+  class="form-control" id="usuario" aria-describedby="usuario" placeholder="Coloca tu nombre de usuario :)" 
+  required minlength="2" name="usuario">
+  <div *ngIf="usuario.invalid && (usuario.dirty || usuario.touched)" class="alert alert-danger">
+
+      <div *ngIf="usuario.errors.required">
+        El nombre es obligatorio
+      </div>
+      <div *ngIf="usuario.errors.minlength">
+        El nombre debe tener al menos 2 caracteres
+      </div>
+
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="pass" class="col-sm text-center">Contraseña(*)</label>
+    <input #pass="ngModel" [(ngModel)]="user.pass" type="password" class="form-control" id="pass" placeholder="Contraseña" name="pass" required>
+    <div *ngIf="pass.invalid && (pass.dirty || pass.touched)" class="alert alert-danger">
+
+        <div *ngIf="pass.errors.required">
+          La contraseña es obligatoria
+        </div>
+        
+      </div>
+    </div>
+  <div class="form-group">
+    <label for="email" class="col-sm text-center">Correo electrónico(*)</label>
+    <input #email="ngModel" [(ngModel)]="user.email" type="email" class="form-control" id="elias" placeholder="" required name="email">
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+
+          <div *ngIf="email.errors.required">
+            El email es obligatorio
+          </div>
+          
+        </div>
+  </div>
+  <div class="col-sm text-center">
+      <button type="submit" class="btn sara" [disabled]="!registerForm.form.valid">Registro</button>
+      {{user |json}}
+    </div>
+  </form>
+  
+  
+</div>
+   

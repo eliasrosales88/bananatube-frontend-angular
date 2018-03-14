@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -12,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 
 
@@ -25,12 +28,15 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     WrapperComponent,
     SugerenciasComponent,
-    FooterComponent
+    FooterComponent,
+    UsuarioComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

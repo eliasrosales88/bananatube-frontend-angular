@@ -5,6 +5,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { LoginComponent } from './login/login.component';
 import { SugerenciasComponent} from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
+import { VideoComponent } from './video/video.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'footer',
     component: FooterComponent
+  },
+  {
+    path: 'video/:id',
+    component: VideoComponent
   }
 ];
 

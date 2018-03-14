@@ -15,6 +15,7 @@ import { WrapperComponent } from './wrapper/wrapper.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { VideoComponent } from './video/video.component';
 
 
 
@@ -29,7 +30,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
     WrapperComponent,
     SugerenciasComponent,
     FooterComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    VideoComponent
     
   ],
   imports: [

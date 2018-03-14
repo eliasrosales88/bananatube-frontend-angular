@@ -5,6 +5,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { LoginComponent } from './login/login.component';
 import { SugerenciasComponent} from './sugerencias/sugerencias.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -22,6 +23,7 @@ const routes: Routes = [
     path: 'sugerencias',
     component: SugerenciasComponent
   }
+  
 ];
 
 @NgModule({

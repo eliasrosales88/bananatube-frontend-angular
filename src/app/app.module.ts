@@ -10,13 +10,15 @@ import { RegistroComponent } from './registro/registro.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
     RegistroComponent,
-    SugerenciasComponent
+    SugerenciasComponent,
+    
   ],
   imports: [
     BrowserModule,

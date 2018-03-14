@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
 import { ListadeamigosComponent } from './listadeamigos/listadeamigos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { PerfilusuarioComponent } from './perfilusuario/perfilusuario.component';
 
 
 
@@ -33,6 +34,7 @@ import { ContactoComponent } from './contacto/contacto.component';
     FooterComponent,
     ListadeamigosComponent,
     ContactoComponent,
+    PerfilusuarioComponent,
    
     
   ],

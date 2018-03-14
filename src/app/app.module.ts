@@ -18,6 +18,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     ConfiguracionComponent,
     FooterComponent,
     ListadeamigosComponent,
-    ContactoComponent
+    ContactoComponent,
+   
     
   ],
   imports: [

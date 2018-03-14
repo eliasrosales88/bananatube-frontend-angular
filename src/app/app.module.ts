@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -18,6 +19,7 @@ import { SugerenciasComponent } from './sugerencias/sugerencias.component';
     LoginComponent,
     RegistroComponent,
     SugerenciasComponent,
+    FooterComponent,
     
   ],
   imports: [

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
+import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { RegistroComponent } from './registro/registro.component';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    SugerenciasComponent
   ],
   imports: [
     BrowserModule,

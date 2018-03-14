@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { HeaderComponent } from './header/header.component';
+import { WrapperComponent } from './wrapper/wrapper.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
@@ -19,9 +22,12 @@ import { ConfiguracionComponent } from './configuracion/configuracion.component'
     HomeComponent,
     LoginComponent,
     RegistroComponent,
+    SidebarComponent,
+    HeaderComponent,
+    WrapperComponent,
     SugerenciasComponent,
-    FooterComponent,
     ConfiguracionComponent,
+    FooterComponent
     
   ],
   imports: [

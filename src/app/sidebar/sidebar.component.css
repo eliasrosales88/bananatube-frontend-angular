@@ -1,0 +1,25 @@
+.bg_dark{
+    background: #333333;
+    opacity: 0.7;
+}
+
+.bg_aside{
+    background: white;
+}
+
+.bg_aside_top{
+    background: #7EB04C;
+    height: 150px;
+
+}
+
+.z-menu{
+    width: 100%;
+    height: 100%;
+    z-index: 2000000;
+    position: absolute;
+}
+
+.icon_dark{
+    color: #333333;
+}

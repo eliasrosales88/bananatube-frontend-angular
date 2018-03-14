@@ -5,7 +5,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { LoginComponent } from './login/login.component';
 import { SugerenciasComponent} from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { ConfiguracionComponent}  from './configuracion/configuracion.component';
 
 const routes: Routes = [
   {
@@ -27,6 +27,10 @@ const routes: Routes = [
   {
     path: 'footer',
     component: FooterComponent
+  },
+  {
+    path: 'configuracion',
+    component: ConfiguracionComponent
   }
 ];
 

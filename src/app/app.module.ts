@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
+import { ConfiguracionComponent } from './configuracion/configuracion.component';
 
 
 
@@ -20,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     RegistroComponent,
     SugerenciasComponent,
     FooterComponent,
+    ConfiguracionComponent,
     
   ],
   imports: [

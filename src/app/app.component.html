@@ -1,5 +1,4 @@
-<app-wrapper>
-    
-</app-wrapper>
+<app-sidebar (sombraClickeada)="toggleSidebar()" *ngIf="muestrameSidebar"></app-sidebar>
+<app-header (hamburguesaClickeada)="toggleSidebar()"></app-header>
 <router-outlet></router-outlet>
       

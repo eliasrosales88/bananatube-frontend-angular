@@ -17,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { VideoComponent } from './video/video.component';
 
+import { LoginCheckService } from './login-check.service';
+
 
 
 @NgModule({
@@ -40,7 +42,7 @@ import { VideoComponent } from './video/video.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [LoginCheckService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,9 +1,12 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Usuario } from '../usuario';
 import { HttpClient } from '@angular/common/http';
-import { Router} from '@angular/router';
-import { LoginCheckService} from '../login-check.service';
-import {Observable} from "rxjs/Observable";
+import { Router } from '@angular/router';
+import { LoginCheckService } from '../login-check.service';
+import { Observable } from "rxjs/Observable";
+import { HeaderComponent } from "../header/header.component";
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -37,6 +40,12 @@ export class LoginComponent implements OnInit {
 
   }
  
+ @Output() userHasBeingLogged = new EventEmitter<any>();
+ emitUserIsLogged(data): void {
+    this.userHasBeingLogged.emit(data);
+  }
+
+ 
   onSubmit(loginForm){
     console.log(this.user);
     this.http.post(this.url,this.user,{withCredentials: true}).subscribe(
@@ -48,9 +57,20 @@ export class LoginComponent implements OnInit {
             this.dataCheck = dataCheck;
             console.log(this.dataCheck);
             //notiticar el login
-            this.loginService.setLogin(this.dataCheck.login);
-            if (this.dataCheck.login === true) {
-              console.log("SIIIII");
+            //this.loginService.setLogin(this.dataCheck.login);
+            this.emitUserIsLogged(dataCheck);
+
+            if (window.localStorage) {
+              HeaderComponent.updateUserStatus.next(true); // here!
+
+              localStorage.setItem("user", JSON.stringify(this.dataCheck));
+            
+              let user = localStorage.getItem("user");
+            
+              //localStorage.removeItem("user");
+            }
+            else {
+              throw new Error('Tu Browser no soporta LocalStorage!');
             }
             this.mensaje="done";
           } ,
@@ -58,10 +78,11 @@ export class LoginComponent implements OnInit {
             console.log("Error occured");
           });
         this.mensaje="done";
+        
         this.router.navigate(['/']);
       } ,
       err => {
-        console.log("Error occured");
+        console.log("Error ocured. Usuario no encontrado");
       });
   }
 

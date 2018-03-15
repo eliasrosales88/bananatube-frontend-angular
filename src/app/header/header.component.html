@@ -13,10 +13,14 @@
               <div class="col-2">
                   <i class="fa fa-ellipsis-v fa-3x d-md-none float-right text-white margin-top-15px" aria-hidden="true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
                       <div class="dropdown-menu dropdown-menu-right">
-                          <div class="text-center">
+                          <div *ngIf="!user" class="text-center">
                               <button id="btn_registro"  class="btn mb-2 sara" type="button" [routerLink]="[ '/registro']">Registro</button>
                               <button id="btn_signin" class="btn mb-2 ana" type="button" [routerLink]="[ '/login']">Ingresar</button>
                           </div>
+                          <div *ngIf="user" class="text-center">
+                            <button id="btn_perfil"  class="btn mb-2 sara" type="button" [routerLink]="[ '/perfil']">Perfil</button>
+                            <button id="btn_logout" class="btn mb-2 ana" type="button" [routerLink]="[ '/']">Salir</button>
+                        </div>
                       </div>
               </div>
           </div>

@@ -1,4 +1,7 @@
 <app-sidebar (sombraClickeada)="toggleSidebar()" *ngIf="muestrameSidebar"></app-sidebar>
-<app-header (hamburguesaClickeada)="toggleSidebar()"></app-header>
+<app-header (hamburguesaClickeada)="toggleSidebar()" 
+            (userHasBeingLogged)="setUserIsLogged($event)"
+
+></app-header>
 <router-outlet></router-outlet>
       

@@ -20,6 +20,9 @@ export class AppComponent {
     private http: HttpClient,private router: Router
   ){ }
   
+  setUserIsLogged(data){
+    console.log(data);
+  }
  
   toggleSidebar(){
     this.muestrameSidebar = !this.muestrameSidebar;

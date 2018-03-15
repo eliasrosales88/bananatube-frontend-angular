@@ -15,7 +15,7 @@ export class RegistroComponent implements OnInit {
   data:any;
   mensaje:string;
   constructor(private http: HttpClient,private router: Router) { 
-    this.user=new Usuario(0,"","","");
+    this.user=new Usuario("","","");
     this.url="http://localhost:3000/api/registro";
     this.mensaje="";
   }

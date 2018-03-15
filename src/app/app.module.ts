@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
+import { CondicionesComponent } from './condiciones/condiciones.component';
 
 
 
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     WrapperComponent,
     SugerenciasComponent,
-    FooterComponent
+    FooterComponent,
+    CondicionesComponent
     
   ],
   imports: [

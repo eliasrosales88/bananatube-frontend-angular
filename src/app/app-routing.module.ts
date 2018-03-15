@@ -9,6 +9,8 @@ import { ConfiguracionComponent}  from './configuracion/configuracion.component'
 import { ListadeamigosComponent}  from './listadeamigos/listadeamigos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PerfilusuarioComponent } from './perfilusuario/perfilusuario.component';
+import { VideoComponent } from './video/video.component';
+
 
 const routes: Routes = [
   {
@@ -46,6 +48,10 @@ const routes: Routes = [
   {
     path: 'perfilusuario',
     component: PerfilusuarioComponent
+  },
+  { 
+    path: 'video/:id',
+    component: VideoComponent
   }
 ];
 

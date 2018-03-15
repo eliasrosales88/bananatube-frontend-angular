@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -17,6 +19,8 @@ import { ListadeamigosComponent } from './listadeamigos/listadeamigos.component'
 import { ContactoComponent } from './contacto/contacto.component';
 import { PerfilusuarioComponent } from './perfilusuario/perfilusuario.component';
 
+import { UsuarioComponent } from './usuario/usuario.component';
+import { VideoComponent } from './video/video.component';
 
 
 
@@ -36,11 +40,16 @@ import { PerfilusuarioComponent } from './perfilusuario/perfilusuario.component'
     ContactoComponent,
     PerfilusuarioComponent,
    
+    FooterComponent,
+    UsuarioComponent,
+    VideoComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

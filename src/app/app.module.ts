@@ -18,6 +18,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { VideoComponent } from './video/video.component';
 
 import { LoginCheckService } from './login-check.service';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 
@@ -33,7 +34,8 @@ import { LoginCheckService } from './login-check.service';
     SugerenciasComponent,
     FooterComponent,
     UsuarioComponent,
-    VideoComponent
+    VideoComponent,
+    PerfilComponent
     
   ],
   imports: [

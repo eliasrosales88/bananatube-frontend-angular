@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
   mensaje:string;
   loginCheck:Observable<any>;
   loginStatus:boolean;
+  userId:any;
 
 
   
@@ -66,7 +67,7 @@ export class LoginComponent implements OnInit {
 
             
               let user = localStorage.getItem("user");
-            
+              this.userId = this.dataCheck.usuario._id;
               //localStorage.removeItem("user");
             }
             else {
@@ -79,7 +80,7 @@ export class LoginComponent implements OnInit {
           });
         this.mensaje="done";
         
-        this.router.navigate(['/']);
+        this.router.navigate(['/perfil']);
       } ,
       err => {
         console.log("Error ocured. Usuario no encontrado");

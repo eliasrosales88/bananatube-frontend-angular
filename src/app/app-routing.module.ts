@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { SugerenciasComponent} from './sugerencias/sugerencias.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideoComponent } from './video/video.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'video/:id',
     component: VideoComponent
+  },
+  {
+    path: 'perfil',
+    component: PerfilComponent
   }
 ];
 

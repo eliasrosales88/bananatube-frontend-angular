@@ -24,6 +24,7 @@ export class HeaderComponent implements OnInit {
   loginStatus:boolean;
   public static updateUserStatus: Subject<boolean> = new Subject();
   user:any;
+  userId:any;
   
   constructor(private http: HttpClient,private router: Router,private loginService: LoginCheckService){
     this.url="http://localhost:3000/api/login";
@@ -34,6 +35,8 @@ export class HeaderComponent implements OnInit {
     this.user = JSON.parse(localStorage.getItem('user'));
     this.loginStatus =this.user.login;
     console.log(this.loginStatus, "Al fin");
+    this.userId = this.user.usuario._id;
+    console.log(this.userId);
   })
   
   }
@@ -51,7 +54,7 @@ export class HeaderComponent implements OnInit {
       this.loginStatus = false;
     
     
-    
+      this.router.navigate(['/']);
     
     }else {
       throw new Error('Tu Browser no soporta LocalStorage!');

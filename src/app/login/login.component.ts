@@ -61,9 +61,9 @@ export class LoginComponent implements OnInit {
             this.emitUserIsLogged(dataCheck);
 
             if (window.localStorage) {
+              localStorage.setItem("user", JSON.stringify(this.dataCheck));
               HeaderComponent.updateUserStatus.next(true); // here!
 
-              localStorage.setItem("user", JSON.stringify(this.dataCheck));
             
               let user = localStorage.getItem("user");
             

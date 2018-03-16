@@ -28,8 +28,8 @@ export class HeaderComponent implements OnInit {
     this.mensaje="";
     HeaderComponent.updateUserStatus.subscribe(res => {
     this.user = JSON.parse(localStorage.getItem('user'));
-    console.log(this.user.login, "Al fin");
     this.loginStatus =this.user.login;
+    console.log(this.loginStatus, "Al fin");
   })
   
   }

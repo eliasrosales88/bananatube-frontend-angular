@@ -3,6 +3,29 @@
   <div class="white mt-3 p-2">
     <h2>{{username}}</h2>
     <p>{{userEmail}}</p>
-    <button class="btn sara" (click)="getVideos()">Mis videos</button>
+    <button *ngIf="!muestraVideos" class="btn sara" (click)="getVideos()">Mis videos</button>
+    <button *ngIf="muestraVideos" class="btn sara" (click)="ocultaVideos()">Ocultar videos</button>
+    <button class="btn ana" (click)="subeVideos()">Sube videos</button>
+
   </div>
+<div *ngIf="muestraVideos">
+  <div  *ngFor="let item of dataVideos; let i = index" class="white mt-3 p-2">
+      <div class="row">
+          <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+            <video width="100%" controls preload>
+                <source src="http://localhost:3000/{{item.url}}" type="video/mp4">
+                Tu navegador no soporta videos HTML
+              </video>
+              <div>
+              </div>
+          </div>
+          <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+            <h2 class="text-center">{{item.titulo}}</h2>
+            <h6>{{username}}</h6>
+            <p>{{item.descripcion}}</p>
+          </div>
+        </div>
+  </div>
+
+</div>
 </div>

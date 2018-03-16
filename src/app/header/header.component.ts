@@ -5,6 +5,7 @@ import { LoginCheckService } from '../login-check.service';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -14,8 +15,10 @@ import { Subject } from 'rxjs/Subject';
 export class HeaderComponent implements OnInit {
   url:string;
   urlCheck:string;
+  urlLogout:string;
   data:any;
   dataCheck:any;
+  dataLogout:any;
   mensaje:string;
   loginCheck:Observable<any>;
   loginStatus:boolean;
@@ -25,6 +28,7 @@ export class HeaderComponent implements OnInit {
   constructor(private http: HttpClient,private router: Router,private loginService: LoginCheckService){
     this.url="http://localhost:3000/api/login";
     this.urlCheck="http://localhost:3000/api/loginCheck";
+    this.urlLogout="http://localhost:3000/api/logout";
     this.mensaje="";
     HeaderComponent.updateUserStatus.subscribe(res => {
     this.user = JSON.parse(localStorage.getItem('user'));
@@ -40,7 +44,22 @@ export class HeaderComponent implements OnInit {
     this.hamburguesaClickeada.emit();
   }
    
+  logout(){
+    if (window.localStorage) {
+      localStorage.clear();
+    
+      this.loginStatus = false;
+    
+    
+    
+    
+    }else {
+      throw new Error('Tu Browser no soporta LocalStorage!');
+    }
 
+
+
+  }
   
   ngOnInit() {
     
